@@ -1,0 +1,26 @@
+Source: hybris-mobian-archive-keyring
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Section: misc
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.5.0.3
+Vcs-Browser: https://github.com/hybris-mobian/hybris-mobian-archive-keyring
+Vcs-Git: https://github.com/hybris-mobian-releng/hybris-mobian-archive-keyring.git
+
+Package: hybris-mobian-archive-keyring
+Architecture: all
+Pre-Depends: apt
+Depends: ${misc:Depends}
+Description: Archive keyring for hybris-mobian repositories
+ This package contains the archive keyring for hybris-mobian
+ repositories.
+
+# TODO: remove once upstream mobian ships
+# an equivalent package
+Package: mobian-archive-keyring
+Architecture: all
+Pre-Depends: apt
+Depends: ${misc:Depends}
+Description: Archive keyring for mobian repositories
+ This package contains the archive keyring for mobian
+ repositories.
