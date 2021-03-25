@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: hybris-mobian-archive-keyring
-Source: https://github.com/hybris-mobian/hybris-mobian-archive-keyring
+Upstream-Name: droidian-archive-keyring
+Source: https://github.com/droidian/droidian-archive-keyring
 
 Files: *
 License: Public Domain

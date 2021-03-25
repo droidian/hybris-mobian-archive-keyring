@@ -1,18 +1,20 @@
-Source: hybris-mobian-archive-keyring
-Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Source: droidian-archive-keyring
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
 Section: misc
 Priority: optional
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.5.0.3
-Vcs-Browser: https://github.com/hybris-mobian/hybris-mobian-archive-keyring
-Vcs-Git: https://github.com/hybris-mobian-releng/hybris-mobian-archive-keyring.git
+Vcs-Browser: https://github.com/droidian/droidian-archive-keyring
+Vcs-Git: https://github.com/droidian/droidian-archive-keyring.git
 
-Package: hybris-mobian-archive-keyring
+Package: droidian-archive-keyring
 Architecture: all
 Pre-Depends: apt
 Depends: ${misc:Depends}
-Description: Archive keyring for hybris-mobian repositories
- This package contains the archive keyring for hybris-mobian
+Breaks: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
+Replaces: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
+Description: Archive keyring for Droidian repositories
+ This package contains the archive keyring for Droidian
  repositories.
 
 # TODO: remove once upstream mobian ships
@@ -24,3 +26,11 @@ Depends: ${misc:Depends}
 Description: Archive keyring for mobian repositories
  This package contains the archive keyring for mobian
  repositories.
+
+Package: hybris-mobian-archive-keyring
+Architecture: all
+Pre-Depends: apt
+Depends: droidian-archive-keyring
+Description: Archive keyring for Droidian repositories -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.

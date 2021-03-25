@@ -1,1 +1,2 @@
+/usr/share/archive-keyrings/droidian.gpg /etc/apt/trusted.gpg.d/droidian.gpg
 /usr/share/archive-keyrings/hybris-mobian.gpg /etc/apt/trusted.gpg.d/hybris-mobian.gpg
