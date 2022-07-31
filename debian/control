@@ -25,15 +25,18 @@ Description: Archive keyring for debian-pm repositories
  This package contains the archive keyring for debian-pm
  repositories.
 
-# TODO: remove once upstream mobian ships
-# an equivalent package
-Package: mobian-archive-keyring
+Package: mobian-droidian-archive-keyring
 Architecture: all
 Pre-Depends: apt
 Depends: ${misc:Depends}
+Conflicts: mobian-archive-keyring
+Replaces: mobian-archive-keyring
 Description: Archive keyring for mobian repositories
  This package contains the archive keyring for mobian
  repositories.
+ .
+ On Droidian systems, you should use this package in place
+ of the Mobian equivalent.
 
 Package: hybris-mobian-archive-keyring
 Architecture: all
