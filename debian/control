@@ -17,6 +17,14 @@ Description: Archive keyring for Droidian repositories
  This package contains the archive keyring for Droidian
  repositories.
 
+Package: cutie-archive-keyring
+Architecture: all
+Pre-Depends: apt
+Depends: ${misc:Depends}
+Description: Archive keyring for Cutie Shell repositories
+ This package contains the archive keyring for Cutie Shell
+ repositories.
+
 Package: debian-pm-archive-keyring
 Architecture: all
 Pre-Depends: apt
