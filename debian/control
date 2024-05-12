@@ -9,6 +9,7 @@ Vcs-Git: https://github.com/droidian/droidian-archive-keyring.git
 
 Package: droidian-archive-keyring
 Architecture: all
+Priority: important
 Pre-Depends: apt
 Depends: ${misc:Depends}
 Breaks: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
